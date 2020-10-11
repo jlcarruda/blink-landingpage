@@ -1,0 +1,33 @@
+.frontsection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  background-color: #fed531;
+}
+
+/* #fed531 */ 
+
+.infoContainer {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.infoContainer h1 {
+  font-size: 5em;
+  font-family: 'Montserrat';
+  line-height: 1em;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Comfortaa';
+  margin-top: 50px;
+}
+
+.frontImage {
+  width: 50%;
+}

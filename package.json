@@ -7,9 +7,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^2.8.0",
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-lottie": "^1.2.3"
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",
