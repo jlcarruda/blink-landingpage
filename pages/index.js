@@ -1,14 +1,36 @@
+import React from 'react'
+import Lottie from 'react-lottie'
+
 import Nav from '../components/nav'
+import landingStyle from '../styles/landing.module.css'
+import guardianEyeAnimation from '../public/animations/guardian-eye.json'
 
 export default function IndexPage() {
+  const frontImageOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: guardianEyeAnimation, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+
   return (
-    <div>
-      <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
-        </h1>
+    <React.Fragment>
+      <div>
+        <Nav />
       </div>
-    </div>
+      <section className={landingStyle.frontsection}>
+        
+        <div className={landingStyle.infoContainer}>
+          <h1>Naturalidade e segurança para sua Stream</h1>
+          <span className={landingStyle.subtitle}>O único serviço de ofuscação de conteúdo sensível on-the-fly, potencializado com inteligência artificial, que busca conforto e naturalidade aos seus seguidores</span>
+        </div>
+      
+        <div className={landingStyle.frontImage}>
+          <Lottie options={frontImageOptions} height={500} width={500} isStopped={false} isPaused={false}/>
+        </div>
+      </section>
+    </React.Fragment>
   )
 }
