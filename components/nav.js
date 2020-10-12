@@ -12,7 +12,7 @@ export default function Nav() {
   return (
     <nav className={navStyle.nav}>
       <Link href="/">
-        <a className="text-3xl text-gray-900 no-underline">Blink</a>
+        <a className="text-3xl font-bold text-gray-900 no-underline">Blink</a>
       </Link>
       <ul className="flex items-center">
         <ul className="flex items-center space-x-12">
