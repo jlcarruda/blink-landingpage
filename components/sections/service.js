@@ -3,6 +3,7 @@ import Lottie from 'react-lottie'
 import { Waypoint } from 'react-waypoint'
 
 import serviceStyle from './service.module.css'
+import sectionStyle from './section.module.css'
 import watchingAnimation from '../../public/animations/watching.json'
 
 export default function ServiceSection(props) {
@@ -23,7 +24,7 @@ export default function ServiceSection(props) {
   return (
     <section id="services" className="flex flex-col p-10">
       <div className="py-10 flex flex-col">
-        <span className={serviceStyle.sectionTitle}>Download</span>
+        <span className={sectionStyle.sectionTitle}>Download</span>
       </div>
       
       <div className="flex justify-center xl:flex-row md:flex-col-reverse sm:flex-col-reverse">

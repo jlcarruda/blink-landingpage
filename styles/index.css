@@ -28,3 +28,9 @@
 section {
   height: 100vh;
 }
+
+nav {
+  padding: 32px;
+  background-color: #fed531; 
+  z-index: 1000;
+}

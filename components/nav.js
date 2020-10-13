@@ -2,13 +2,14 @@ import Link from 'next/link'
 
 const links = [
   { href: '#services', label: 'Download' },
-  { href: 'https://nextjs.org/docs', label: 'Preços' },
-  { href: 'https://blink-ai.blogspot.com/', label: 'Blog' },
+  { href: '#how', label: 'Como funciona?' },
+  { href: '#pricing', label: 'Planos' },
+  { href: 'https://blink-ai.blogspot.com/', label: 'Blog' }
 ]
 
 export default function Nav() {
   return (
-    <nav className="flex justify-between p-8 bg-yolk">
+    <nav className="flex justify-between p-8 fixed w-full bg-yolk">
       <Link href="/">
         <a className="text-3xl font-bold text-gray-900 no-underline">Blink</a>
       </Link>
@@ -24,5 +25,6 @@ export default function Nav() {
         </ul>
       </ul>
     </nav>
+  
   )
 }
