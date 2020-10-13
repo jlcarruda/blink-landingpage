@@ -2,7 +2,7 @@ import Link from 'next/link'
 import navStyle from '../styles/nav.module.css'
 
 const links = [
-  { href: 'https://github.com/vercel/next.js', label: 'Services' },
+  { href: '#services', label: 'Services' },
   { href: 'https://nextjs.org/docs', label: 'About' },
   { href: 'https://blink-ai.blogspot.com/', label: 'Blog' },
   { href: 'https://blink-ai.blogspot.com/', label: 'Contact' }
