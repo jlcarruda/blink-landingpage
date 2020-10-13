@@ -23,17 +23,17 @@ export default function ServiceSection(props) {
   return (
     <section id="services" className="flex flex-col p-10">
       <div className="py-10 flex flex-col">
-        <span className={serviceStyle.sectionTitle}>Como utilizar?</span>
+        <span className={serviceStyle.sectionTitle}>Download</span>
       </div>
       
       <div className="flex justify-center xl:flex-row md:flex-col-reverse sm:flex-col-reverse">
         <div>
-          <Waypoint onEnter={() => setAnimationIsStopped(false)} />
           <Lottie options={watchingAnimationOptions} height={600} width={600} isStopped={animationIsStopped} />
+          <Waypoint onEnter={() => setAnimationIsStopped(false)} />
         </div>
         <div className="flex md:flex-row sm:flex-col justify-evenly relative w-full">
           {cards.map(({name, description, disabled, image}) => (
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg border-black border-2">
               {image && (
                 <div className="px-6 py-4 flex justify-center">
                   <img src={image} className={serviceStyle.cardIcon}/>
