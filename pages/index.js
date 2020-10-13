@@ -2,7 +2,7 @@ import React from 'react'
 import Lottie from 'react-lottie'
 
 import Nav from '../components/nav'
-import { ServiceSection, HowSection, PricingSection } from '../components/sections'
+import { ServiceSection, AboutSection, PricingSection } from '../components/sections'
 import landingStyle from '../styles/landing.module.css'
 import guardianEyeAnimation from '../public/animations/guardian-eye.json'
 
@@ -32,9 +32,9 @@ export default function IndexPage() {
             <Lottie options={frontImageOptions} height={500} width={500} isStopped={false} isPaused={false}/>
           </div>
         </section>
-        <ServiceSection />
+        <AboutSection />
         <PricingSection />
-        <HowSection />
+        <ServiceSection />
       </div>
     </React.Fragment>
   )

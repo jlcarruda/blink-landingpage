@@ -29,7 +29,7 @@ export default function PricingSection() {
         </div>
       </div>
       <div className="">
-        <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col items-center absolute w-full h-auto top-28">
+        <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col items-center justify-center absolute w-full h-auto top-28">
           {plans.map(({name, description, targetUser, price, featured}) => (
             <div className={`${!featured ? 'mt-20' : ''} mt-8 mr-8 ml-8 md:ml-2 md:mr-2 lg:max-w-sm md:max-w-xl rounded-lg shadow-lg p-10 md:p-8 bg-white relative border-black border-2`}>
               {featured && (
