@@ -27,7 +27,11 @@ export default function ServiceSection(props) {
         <span>Os usuários do Chrome poderão usufruir da nossa tecnologia de ofuscação no conteúdo do seu navegador, de maneira configurável!</span>
       </div>
       
-      <div className="flex xl:flex-row md:flex-col sm:flex-col">
+      <div className="flex justify-center xl:flex-row md:flex-col-reverse sm:flex-col-reverse">
+        <div>
+          <Waypoint onEnter={() => setAnimationIsStopped(false)} />
+          <Lottie options={watchingAnimationOptions} height={600} width={600} isStopped={animationIsStopped} />
+        </div>
         <div className="flex md:flex-row sm:flex-col justify-evenly relative w-full">
           {cards.map(({name, description, disabled, image}) => (
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
@@ -54,10 +58,6 @@ export default function ServiceSection(props) {
               </div>
             </div>
           ))}
-        </div>
-        <div>
-          <Waypoint onEnter={() => setAnimationIsStopped(false)} />
-          <Lottie options={watchingAnimationOptions} height={600} width={600} isStopped={animationIsStopped} />
         </div>
       </div>
     </section>
