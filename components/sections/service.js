@@ -18,13 +18,12 @@ export default function ServiceSection(props) {
 
   const cards = [
     {name: "Plugin do OBS", image: "/obs.png", description: "Para streamers, teremos um plugin no OBS, que direciona o seu feed de video para a nossa plataforma para tratamento, e depois repassa para a sua plataforma de stream escolhida!", disabled: true},
-    {name: "Extensão do Chrome", image: "/chrome.png", description: "Os usuários do Chrome poderão usufruir da nossa tecnologia de ofuscação no conteúdo do seu navegador, de maneira configurável!", disabled: true},
+    // {name: "Extensão do Chrome", image: "/chrome.png", description: "Os usuários do Chrome poderão usufruir da nossa tecnologia de ofuscação no conteúdo do seu navegador, de maneira configurável!", disabled: true},
   ]
   return (
     <section id="services" className="flex flex-col p-10">
       <div className="py-10 flex flex-col">
         <span className={serviceStyle.sectionTitle}>Como utilizar?</span>
-        <span>Os usuários do Chrome poderão usufruir da nossa tecnologia de ofuscação no conteúdo do seu navegador, de maneira configurável!</span>
       </div>
       
       <div className="flex justify-center xl:flex-row md:flex-col-reverse sm:flex-col-reverse">

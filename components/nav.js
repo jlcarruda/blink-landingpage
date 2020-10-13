@@ -1,16 +1,14 @@
 import Link from 'next/link'
-import navStyle from '../styles/nav.module.css'
 
 const links = [
-  { href: '#services', label: 'Services' },
-  { href: 'https://nextjs.org/docs', label: 'About' },
+  { href: '#services', label: 'Ferramentas' },
+  { href: 'https://nextjs.org/docs', label: 'Preços' },
   { href: 'https://blink-ai.blogspot.com/', label: 'Blog' },
-  { href: 'https://blink-ai.blogspot.com/', label: 'Contact' }
 ]
 
 export default function Nav() {
   return (
-    <nav className={navStyle.nav}>
+    <nav className="flex justify-between p-8 bg-yolk">
       <Link href="/">
         <a className="text-3xl font-bold text-gray-900 no-underline">Blink</a>
       </Link>
