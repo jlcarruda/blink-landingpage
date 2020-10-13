@@ -23,7 +23,7 @@ export default function ServiceSection(props) {
   return (
     <section id="services" className="flex flex-col p-10">
       <div className="py-10 flex flex-col">
-        <span className={serviceStyle.sectionTitle}>Download</span>
+        <span className='text-3xl font-semibold'>Download</span>
       </div>
       
       <div className="flex justify-center xl:flex-row md:flex-col-reverse sm:flex-col-reverse">
