@@ -22,7 +22,7 @@ export default function ServiceSection(props) {
   ]
   return (
     <section id="services" className="flex flex-col p-10">
-      <div className="py-10 flex flex-col">
+      <div className="py-10 flex flex-col text-center">
         <span className='text-3xl font-semibold'>Download</span>
       </div>
       

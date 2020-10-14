@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
 const links = [
-  { href: '#services', label: 'Download' },
   { href: '#about', label: 'O que é o Blink?' },
   { href: '#pricing', label: 'Planos' },
+  { href: '#services', label: 'Download' },
   { href: 'https://blink-ai.blogspot.com/', label: 'Blog' }
 ]
 
